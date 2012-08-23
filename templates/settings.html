@@ -1,0 +1,31 @@
+$def with (form1, form2)
+<html>
+<head>
+<title>Settings</title>
+<link rel="stylesheet" type="text/css" href="./static/cm.css" />
+</head>
+<body>
+<div id=text>
+<form method="post" name="form_action" value="foo">
+<table cellspacing=1% cellpadding=15px>
+<td valign=top>
+<b>Toys</b>
+$:form1.render()
+<br>
+<input type="submit" value="Save" />
+</td>
+</form>
+<td valign=top>
+<form method="post" name="form_action" value="bar">
+<b>Clothing</b>
+$:form2.render()
+<br>
+<input type="submit" value="Save" />
+</td>
+</table>
+</form>
+</div>
+<div id=media>
+</div>
+</body>
+</html>

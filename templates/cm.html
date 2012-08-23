@@ -1,0 +1,20 @@
+$def with (routine, pic, form)
+<html>
+<head>
+<title>OpenDomination</title>
+<link rel="stylesheet" type="text/css" href="./static/cm.css" />
+<link rel="shortcut icon" href="./static/favicon.png"> 
+</head>
+<body>
+<div id=text>
+$:routine
+<br><br>
+<form name="main" method="post">
+$:form.render()
+</form>
+</div>
+<div id=media>
+<img src=./static/$pic />
+</div>
+</body>
+</html>
